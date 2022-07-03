@@ -1,0 +1,32 @@
+{
+    "name": "jawak/doku-laravel",
+    "description": "library laravel doku/jokul untuk laravel",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Jawak\\DokuLaravel\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "authors": [
+        {
+            "name": "Riki Handoyo",
+            "email": "jawakeror@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\Jawak\\DokuLaravel\\DokuLaravelServiceProvider"
+            ],
+            "aliases": {
+                "Doku": "Jawak\\DokuLaravel\\Facades\\Doku"
+            }
+        }
+    }
+}
